@@ -1,0 +1,158 @@
+\documentclass[12pt]{article}
+
+\usepackage[american]{babel}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{lipsum} % for filler text
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\pagestyle{fancy}
+\usepackage[svgnames]{xcolor}
+\usepackage[colorlinks=true, allcolors=DeepPink]{hyperref}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\pa}{\partial}
+
+\usepackage{titling}
+\usepackage{hyperref}
+
+\setlength{\droptitle}{-8em}   % This is your set screw
+\setlength{\headheight}{16pt}
+
+\begin{document}
+
+\title{AMATH 732 Project Ideas}
+\author{the royal you (you as in we)}
+\maketitle
+
+\section{Introduction}
+i love latex
+yay $\epsilon$ $\varepsilon$
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{3in}|p{3in}}
+         Stochastics (Individual Based Model)  & Squid Pop'n and Overfishing \\ \hline
+         Could either do something related to a disease going through a pop'n of humble squid OR could do some kind of squid fishery thing ---- could do a disease spreading through a squid fishery with squeeze points and different disease dynamics -- something with changing the size of the space they can travel and also increasing the pop'n rapidly(ish) & Overfishing of other fish changes the squid carrying capacity - how does that change over time? \\
+    \end{tabular}
+    \caption{shoutout projects}
+    % \label{tab:placeholder}
+\end{table}
+
+\textbf{Stochastics (Individual Based Model):}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5in}|p{1.5in}|p{1.5in}|p{1.5in}}
+         Resources  & Tasks & Attractiveness & Flaws \\ \hline
+         literature, available code & modeling, code & link to stochastic modeling, accessible, would be cool to model swimming/the fluid motion of squid in a pop'n, cooler pictures & will require a concrete focus, lots of debugging \\
+    \end{tabular}
+    \caption{shoutout squid}
+\end{table}
+
+
+Squid Pop'n and Overfishing:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5in}|p{1.5in}|p{1.5in}|p{1.5in}}
+         Resources  & Tasks & Attractiveness & Flaws \\ \hline
+         well studied i think, lots of resources  & modeling, code, analysis of model & Accessible and ODE-based (yay ODEs), much more already known analytical theory and graphing directions & will need some work to be novel, could get super complicated super quickly, mostly likely will spiral into a PDE model \\
+    \end{tabular}
+    \caption{shoutout fish}
+    % \label{tab:placeholder}
+\end{table}
+
+potential ideas: population vs. temperature, population vs. populations of other fish?
+\\$\Rightarrow$ I think we can combine these into one model! Would be super interesting (-Madi)
+%also i fixed the tables #ImLearning
+% i didnt know you could do arrows in latex
+
+
+\section{POTENTIAL RESOURCES} %tysm !!!!
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{2.0in}|p{1.0in}|p{2.5in}}
+         Title  & Author & Notes \\ \hline
+        \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2010.02223.x}{Modelling climate-change-induced nonlinear thresholds in cephalopod population dynamics} & Andre et al., 2010 & blah \\ \\
+        \href{https://link.springer.com/article/10.1007/s11160-007-9077-3}{The potential impacts of climate change on inshore squid: biology, ecology and fisheries} & Pecl \& Jackson, 2007 & bleh\\ \\
+        \href{https://www.annualreviews.org/content/journals/10.1146/annurev.ecolsys.36.102003.152644}{Individual-Based Modeling of Ecological and Evolutionary Processes} & Donald L. DeAngelis and Wolf M. Mooij, 2005 &  Review from `05 of individual-based models in ecology \\ \\
+
+        \href{https://cdnsciencepub.com/doi/abs/10.1139/f93-015}{Growth Rate Variation and Larval Survival: Inferences from an Individual-Based Size-Dependent Predation Model} & Rice et al., 1993 & Use of a individual-based model to predict recruitment success of a cohort of fish based on length and growth rate\\ \\
+
+        \href{https://www.degruyterbrill.com/document/doi/10.1515/9781400850624/html}{Individual-based Modeling and Ecology} & Volker Grimm and Steven F. Railsback, 2003 (book) & found a pdf online. book seems to be written for ecologists---mathematical detail seems a little sparse\\ \\ 
+        \href{https://academic.oup.com/beheco/article/16/1/178/206370}{Density distribution and size sorting in fish schools: an individual-based model} & Charlotte K. Hemelrijk , Hanspeter Kunz, 2004 & fish schooling \\ \\ 
+
+        \href{https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1365-2419.1997.00037.x}{
+An individual based model of fish school reactions: predicting antipredator behaviour as observed in nature} &RUNE VABØ, LEIF NØTTESTAD, 2003 & cool
+    
+    \end{tabular} 
+    \caption{shoutout literature}
+    % \label{tab:placeholder}
+\end{table}
+
+\section{TASKS (\& who's doing them)}
+\begin{itemize}
+    \item madi: build model
+    \item cole:
+    \begin{itemize}
+        \item set up github / version control
+        \item data analysis / statistics??
+        \item making powerpoint fun
+    \end{itemize}
+    \item sarah: 
+        \begin{itemize}
+            \item writing?
+            \item part of data analysis
+            \item part of presentation
+            \item is our model realistic
+        \end{itemize}
+        
+\end{itemize}
+
+\section{CORE MODEL}
+\begin{itemize}
+    \item FISH
+    \begin{itemize}
+        \item fish population / concentration
+        \item how do they move (water current, brownian motion, etc.)
+        \item amount of schooling / fish schooling mechanic
+    \end{itemize}
+    \item SQUID
+    \begin{itemize}
+        \item jet propulsion?
+        \item choose fish based on multiple criteria? need mechanic
+        \begin{itemize}
+            \item how close to fish
+            \item how close fish is to other fish
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{GOALS}
+\begin{itemize}
+    \item how much does schooling matter
+    \item how much does the wait time between eating matter
+    \item how much does squid-fish coupling matter?
+    \item fish population / concentration over time
+\end{itemize}
+
+\subsection{FUTURE WORK/SUPPLEMENTAL ACTIVITIES}
+\begin{itemize}
+    \item multiple squid / shoal of squid?
+    \item water current / fish propulsion
+\end{itemize}
+
+
+
+\end{document}

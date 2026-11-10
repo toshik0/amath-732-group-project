@@ -27,6 +27,7 @@
 
 \usepackage{titling}
 \usepackage{hyperref}
+\usepackage{longtable}
 
 \setlength{\droptitle}{-8em}   % This is your set screw
 \setlength{\headheight}{16pt}
@@ -78,28 +79,41 @@ potential ideas: population vs. temperature, population vs. populations of other
 %also i fixed the tables #ImLearning
 % i didnt know you could do arrows in latex
 
+% changed the table bc it got long -sarah
 
 \section{POTENTIAL RESOURCES} %tysm !!!!
-\begin{table}[H]
+%\begin{table}[H]
+\begin{longtable}{p{2.0in}|p{1.0in}|p{2.5in}}
     \centering
-    \begin{tabular}{p{2.0in}|p{1.0in}|p{2.5in}}
+    %\begin{tabular}{p{2.0in}|p{1.0in}|p{2.5in}}
          Title  & Author & Notes \\ \hline
-        \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2010.02223.x}{Modelling climate-change-induced nonlinear thresholds in cephalopod population dynamics} & Andre et al., 2010 & blah \\ \\
-        \href{https://link.springer.com/article/10.1007/s11160-007-9077-3}{The potential impacts of climate change on inshore squid: biology, ecology and fisheries} & Pecl \& Jackson, 2007 & bleh\\ \\
+        \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2010.02223.x}{Modelling climate-change-induced nonlinear thresholds in cephalopod population dynamics} & Andre et al., 2010 & maybe not relevant since we chose to do IBM rather than climate change population modelling \\ \\
+        \href{https://link.springer.com/article/10.1007/s11160-007-9077-3}{The potential impacts of climate change on inshore squid: biology, ecology and fisheries} & Pecl \& Jackson, 2007 & also maybe not relevant since we chose to do IBM, but the paper says that maybe climate change will be bad for squids and have large effects (you might think it would be good bc they were repopulate faster, but they might need more food/oxygen so it'll affect everything else) \\ \\
         \href{https://www.annualreviews.org/content/journals/10.1146/annurev.ecolsys.36.102003.152644}{Individual-Based Modeling of Ecological and Evolutionary Processes} & Donald L. DeAngelis and Wolf M. Mooij, 2005 &  Review from `05 of individual-based models in ecology \\ \\
 
         \href{https://cdnsciencepub.com/doi/abs/10.1139/f93-015}{Growth Rate Variation and Larval Survival: Inferences from an Individual-Based Size-Dependent Predation Model} & Rice et al., 1993 & Use of a individual-based model to predict recruitment success of a cohort of fish based on length and growth rate\\ \\
 
         \href{https://www.degruyterbrill.com/document/doi/10.1515/9781400850624/html}{Individual-based Modeling and Ecology} & Volker Grimm and Steven F. Railsback, 2003 (book) & found a pdf online. book seems to be written for ecologists---mathematical detail seems a little sparse\\ \\ 
-        \href{https://academic.oup.com/beheco/article/16/1/178/206370}{Density distribution and size sorting in fish schools: an individual-based model} & Charlotte K. Hemelrijk , Hanspeter Kunz, 2004 & fish schooling \\ \\ 
+        \href{https://academic.oup.com/beheco/article/16/1/178/206370}{Density distribution and size sorting in fish schools: an individual-based model} & Charlotte K. Hemelrijk , Hanspeter Kunz, 2004 & IBM to see what spatial patterns exist in fish schools \\ \\ 
 
         \href{https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1365-2419.1997.00037.x}{
-An individual based model of fish school reactions: predicting antipredator behaviour as observed in nature} &RUNE VABØ, LEIF NØTTESTAD, 2003 & cool
+An individual based model of fish school reactions: predicting antipredator behaviour as observed in nature} &RUNE VABØ, LEIF NØTTESTAD, 2003 & 2D model of herring to see internal school dynamics - might be useful to us since it talks about how the schools behave when attacked by a predator (a squid in our case) \\ \\
+
+        \href{https://zslpublications.onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-7998.1974.tb04385.x}{Experiments on whether schooling by their prey affects the hunting behaviour of cephalopods and fish predators} & Neill \& Cullen, 1974 & lab experiment to see how squid, cuttlefish, pike, and perch hunt when the school size is 1 / 6/ 20 \\ \\
+
+        \href{https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00598/full}{Cephalopods as Predators: A Short Journey among Behavioral Flexibilities, Adaptions, and Feeding Habits} & Villanueva et al., 2017 & qualitative summary of how cephalopods hunt (i think) \\ \\
+
+        \href{https://pmc.ncbi.nlm.nih.gov/articles/PMC2124471/}{Observations of wild hunting behaviour and bioluminescence of a large deep-sea, eight-armed squid, Taningia danae} & Kubodera et al., 2007 & how deep-sea squid use bioluminescence when hunting :3 \\ \\
+
+        \href{https://link.springer.com/article/10.1007/s10164-020-00652-4}{Predation behaviour of the European squid Loligo vulgaris} & Castilla et al., 2020 & how does size, pattern, type of food, etc. affect how squid hunt and consume their prey? \\ \\
+
+        \href{https://cdnsciencepub.com/doi/abs/10.1139/z85-003?casa_token=bqmjjmJ0cKEAAAAA:WwqN4ggP8UB-tploMwL8HRw3yJYGMCQLuByca4VsFl7IuEsnIVroR8C_c-qpgDbPYlPSr6QztWM}{Predatory behaviour of squid (Illex illecebrosus) feeding on surface swarms of euphausiids} & Nicol \& O'dor, 1985 & how canadian squid eat krill (apparently different from other observations?) edit: just saying they eat tentacle first, i thought this was common knowledge (maybe it changed since 1985) \\ \\
     
-    \end{tabular} 
+    %\end{tabular} 
     \caption{shoutout literature}
     % \label{tab:placeholder}
-\end{table}
+%\end{table}
+\end{longtable}
 
 \section{TASKS (\& who's doing them)}
 \begin{itemize}
@@ -119,6 +133,8 @@ An individual based model of fish school reactions: predicting antipredator beha
         \end{itemize}
         
 \end{itemize}
+
+\section{DELIVERABLES}
 
 \section{CORE MODEL}
 \begin{itemize}
@@ -142,6 +158,9 @@ An individual based model of fish school reactions: predicting antipredator beha
 \subsection{GOALS}
 \begin{itemize}
     \item how much does schooling matter
+    \begin{itemize}
+        \item could investigate this in two respects: 1) vary the schooling/coupling factor for some subset (e.g., 10 or 20\%) of the fish and see if the fish that school more are more likely to survive; 2) vary the coupling factor for all fish and see if it increases overall survival rates. it'd be interesting to see if schooling behavior is important for overall survival rates, or only individual survival rates. my guess (hypothesis---i suppose) is that it'd only be important for the latter, not so much the former (the squid has to eat something, at the end of the day).
+    \end{itemize}
     \item how much does the wait time between eating matter
     \item how much does squid-fish coupling matter?
     \item fish population / concentration over time

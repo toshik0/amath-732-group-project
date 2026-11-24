@@ -9,8 +9,14 @@ from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 os.chdir("C:/Users/rehbe/UW_Masters/Fall_2026/amath-732-group-project")
 os.makedirs("animations", exist_ok=True)
 
+## Gif Parameters 
+gif_save_path = "no_squid_low_coupling.gif"
+n_frames = 200
 
-### Parameters
+## positions initialized randomly; set seed for reproducibility
+np.random.seed(2112)
+
+## Box Parameters
 width = 100
 height = 100
 
@@ -35,12 +41,12 @@ This is based on the Boid (bird-oid) model of schooling, which is a basic but de
 - fish_cohesion_weight: Weight for cohesion behavior (steering towards average position of neighbors
 '''
 
-fish_sep_weight = 0.25
-fish_align_weight = 1
-fish_cohesion_weight = 0.5
+fish_sep_weight = 0.3
+fish_align_weight = 0.1
+fish_cohesion_weight = 0.02
 
 ## Squid parameters (same as fish)
-num_squid = 5
+num_squid = 0
 squid_positions = np.random.rand(num_squid, 2) * np.array([width, height])
 squid_velocities = (np.random.rand(num_squid, 2))* np.array([width, height])
 squid_neighbor_dist = 1.0
@@ -245,9 +251,9 @@ def animate(_frame):
         squid_image = AnnotationBbox(image_box, (x0,y0), frameon=False)
         ax.add_artist(squid_image)
 
-fish_anim = FuncAnimation(fig, animate, frames=200, interval=50)
+fish_anim = FuncAnimation(fig, animate, frames=n_frames, interval=50)
 
-fish_anim.save(os.path.join("animations", "temp.gif"), writer="pillow", fps=20)
+fish_anim.save(os.path.join("animations", gif_save_path), writer="pillow", fps=20)
 
-plt.show()
+#plt.show()
 

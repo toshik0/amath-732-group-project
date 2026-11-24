@@ -2,6 +2,8 @@
 
 ## ./code
 
+Collection of Jupyter Notebooks showcasing incremental progress of model, as well as final python file with commented chunks removed.
+
 ### SAF_Model_11.12.ipynb
 
 ### SAF_Model_11.17.ipynb
@@ -10,11 +12,18 @@
 
 ### squid_and_fish_model.py
 
+
 ## ./animations
 
 Contains output of simulations--several .gif files. Many of these are used in the presentation to showcase changes in model parameters.
 
 ### squid_and_fish.gif
+
+"Baseline" animation featuring slow squid.
+
+### temp.gif
+
+Temporary file used for testing parameter combinations.
 
 ## Unsorted Files
 

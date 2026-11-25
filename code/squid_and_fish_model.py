@@ -5,13 +5,14 @@ import numpy as np
 from matplotlib.animation import FuncAnimation
 from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 
+# Change directory as needed:
 #os.chdir("C:\\Users\\mmcclern\\Desktop\\AMATH 732")
 os.chdir("C:/Users/rehbe/UW_Masters/Fall_2026/amath-732-group-project")
 os.makedirs("animations", exist_ok=True)
 
 ## Gif Parameters 
-gif_save_path = "no_squid_low_coupling.gif"
-n_frames = 200
+gif_save_path = "five_squid_loose_fish.gif"
+n_frames = 300 # at 20fps currently
 
 ## positions initialized randomly; set seed for reproducibility
 np.random.seed(2112)
@@ -42,21 +43,21 @@ This is based on the Boid (bird-oid) model of schooling, which is a basic but de
 '''
 
 fish_sep_weight = 0.3
-fish_align_weight = 0.1
-fish_cohesion_weight = 0.02
+fish_align_weight = 0.04
+fish_cohesion_weight = 0.2
 
 ## Squid parameters (same as fish)
-num_squid = 0
+num_squid = 5
 squid_positions = np.random.rand(num_squid, 2) * np.array([width, height])
 squid_velocities = (np.random.rand(num_squid, 2))* np.array([width, height])
 squid_neighbor_dist = 1.0
-max_squid_speed = max_fish_speed*1.0
+max_squid_speed = max_fish_speed*1.1
 
 ## squid schooling params (same as fish)
 squid_sep_weight = 1
 squid_align_weight = 0.5
 squid_cohesion_weight = 1.5
-close_fish_weight = 1.0 #weight for how much the squid is attracted to the fish (for eating)
+close_fish_weight = 2.0 #weight for how much the squid is attracted to the fish (for eating)
 
 ## squid emoji
 
@@ -255,5 +256,5 @@ fish_anim = FuncAnimation(fig, animate, frames=n_frames, interval=50)
 
 fish_anim.save(os.path.join("animations", gif_save_path), writer="pillow", fps=20)
 
-#plt.show()
+plt.show()
 

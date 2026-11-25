@@ -11,11 +11,11 @@ os.chdir("C:/Users/rehbe/UW_Masters/Fall_2026/amath-732-group-project")
 os.makedirs("animations", exist_ok=True)
 
 ## Gif Parameters 
-gif_save_path = "five_squid_loose_fish.gif"
+gif_save_path = "many_squid_many_loose_fish.gif"
 n_frames = 300 # at 20fps currently
 
 ## positions initialized randomly; set seed for reproducibility
-np.random.seed(2112)
+np.random.seed(777)
 
 ## Box Parameters
 width = 100
@@ -23,7 +23,7 @@ height = 100
 
 
 ## Fish parameters
-num_fish = 100
+num_fish = 200
 eat_distance = 1.0 #this is how close the squid need to be to the fish to eat them (should be the same between fish and squid)
 
 fish_positions = np.random.rand(num_fish, 2) * np.array([width, height]) #give the fish a random starting point
@@ -42,12 +42,12 @@ This is based on the Boid (bird-oid) model of schooling, which is a basic but de
 - fish_cohesion_weight: Weight for cohesion behavior (steering towards average position of neighbors
 '''
 
-fish_sep_weight = 0.3
-fish_align_weight = 0.04
-fish_cohesion_weight = 0.2
+fish_sep_weight = 0.25
+fish_align_weight = 0.5
+fish_cohesion_weight = 0.1
 
 ## Squid parameters (same as fish)
-num_squid = 5
+num_squid = 10
 squid_positions = np.random.rand(num_squid, 2) * np.array([width, height])
 squid_velocities = (np.random.rand(num_squid, 2))* np.array([width, height])
 squid_neighbor_dist = 1.0
@@ -60,7 +60,6 @@ squid_cohesion_weight = 1.5
 close_fish_weight = 2.0 #weight for how much the squid is attracted to the fish (for eating)
 
 ## squid emoji
-
 image = plt.imread('squid.png')
 
 # OffsetBox

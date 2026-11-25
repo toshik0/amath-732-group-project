@@ -81,19 +81,24 @@ potential ideas: population vs. temperature, population vs. populations of other
 
 % changed the table bc it got long -sarah
 
+
 \section{POTENTIAL RESOURCES} %tysm !!!!
 %\begin{table}[H]
 \begin{longtable}{p{2.0in}|p{1.0in}|p{2.5in}}
     \centering
     %\begin{tabular}{p{2.0in}|p{1.0in}|p{2.5in}}
          Title  & Author & Notes \\ \hline
+         
         \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2010.02223.x}{Modelling climate-change-induced nonlinear thresholds in cephalopod population dynamics} & Andre et al., 2010 & maybe not relevant since we chose to do IBM rather than climate change population modelling \\ \\
+        
         \href{https://link.springer.com/article/10.1007/s11160-007-9077-3}{The potential impacts of climate change on inshore squid: biology, ecology and fisheries} & Pecl \& Jackson, 2007 & also maybe not relevant since we chose to do IBM, but the paper says that maybe climate change will be bad for squids and have large effects (you might think it would be good bc they were repopulate faster, but they might need more food/oxygen so it'll affect everything else) \\ \\
+        
         \href{https://www.annualreviews.org/content/journals/10.1146/annurev.ecolsys.36.102003.152644}{Individual-Based Modeling of Ecological and Evolutionary Processes} & Donald L. DeAngelis and Wolf M. Mooij, 2005 &  Review from `05 of individual-based models in ecology \\ \\
 
         \href{https://cdnsciencepub.com/doi/abs/10.1139/f93-015}{Growth Rate Variation and Larval Survival: Inferences from an Individual-Based Size-Dependent Predation Model} & Rice et al., 1993 & Use of a individual-based model to predict recruitment success of a cohort of fish based on length and growth rate\\ \\
 
         \href{https://www.degruyterbrill.com/document/doi/10.1515/9781400850624/html}{Individual-based Modeling and Ecology} & Volker Grimm and Steven F. Railsback, 2003 (book) & found a pdf online. book seems to be written for ecologists---mathematical detail seems a little sparse\\ \\ 
+        
         \href{https://academic.oup.com/beheco/article/16/1/178/206370}{Density distribution and size sorting in fish schools: an individual-based model} & Charlotte K. Hemelrijk , Hanspeter Kunz, 2004 & IBM to see what spatial patterns exist in fish schools \\ \\ 
 
         \href{https://onlinelibrary.wiley.com/doi/abs/10.1046/j.1365-2419.1997.00037.x}{
@@ -108,12 +113,15 @@ An individual based model of fish school reactions: predicting antipredator beha
         \href{https://link.springer.com/article/10.1007/s10164-020-00652-4}{Predation behaviour of the European squid Loligo vulgaris} & Castilla et al., 2020 & how does size, pattern, type of food, etc. affect how squid hunt and consume their prey? \\ \\
 
         \href{https://cdnsciencepub.com/doi/abs/10.1139/z85-003?casa_token=bqmjjmJ0cKEAAAAA:WwqN4ggP8UB-tploMwL8HRw3yJYGMCQLuByca4VsFl7IuEsnIVroR8C_c-qpgDbPYlPSr6QztWM}{Predatory behaviour of squid (Illex illecebrosus) feeding on surface swarms of euphausiids} & Nicol \& O'dor, 1985 & how canadian squid eat krill (apparently different from other observations?) edit: just saying they eat tentacle first, i thought this was common knowledge (maybe it changed since 1985) \\ \\
+
+        \href{https://github-pages.ucl.ac.uk/rsd-engineeringcourse/ch02data/084Boids.html}{Bird-oid model code} & its a website & goes over how the Boid model works\\\\
     
     %\end{tabular} 
     \caption{shoutout literature}
     % \label{tab:placeholder}
 %\end{table}
 \end{longtable}
+
 
 \section{TASKS (\& who's doing them)}
 \begin{itemize}
@@ -130,30 +138,94 @@ An individual based model of fish school reactions: predicting antipredator beha
             \item part of data analysis
             \item part of presentation
             \item is our model realistic
+            \item background research
         \end{itemize}
         
 \end{itemize}
 
+
 \section{DELIVERABLES}
+
+\subsection{Must-have's}
+\begin{itemize}
+    \item who did what
+    \item a "diary" of experiential activities / making it better
+    \begin{itemize}
+        \item what did you try (2-3 sentences)
+        \item how did you decide on it (be honest lol)
+        \item talk about the before and after (how you think it improved)
+    \end{itemize}
+\end{itemize}
+
+\subsection{functional code}
+Deliverable details:
+    \begin{itemize}
+        \item the fish will be able to school
+        \item the squid will hunt the fish
+        \item fish will be hunted based on a) closeness to squid and b) distance from other fish
+        \item boundary conditions (tank-like instead of periodic)
+    \end{itemize}
+
+HOW DO I FIX THE INDENT :( \\
+Improving / sharpening:
+\begin{itemize}
+    \item "don't settle for broken code that sort of works"
+    \item interrogate your code
+    \item benchmarks
+    \item use the benchmarks for timing (basically clean it up)
+    \item ask the question, "what is a significant computation"
+\end{itemize}
+
+\subsection{talk/presentation ($\sim$15 mins), nobody does it like cole, DATE: NOV 26 2026}
+Deliverable details:
+\begin{itemize}
+    \item 10-12 mins and 3-5 mins for Qs
+    \item change your life or money back guaranteed
+    \item will cover basics of Boid model
+    \item will cover some basic statistics about the evolution of fish pop'n with squid hunting
+    \item will cover fish schooling in regard to squid hunting
+    \item playing with parameters and stuff
+    \item cover how accurate it is to observed squid hunting
+\end{itemize}
+
+HOW DO I FIX THE INDENT \\ %wym ;-;
+Improving / sharpening:
+\begin{itemize}
+    \item why does it matter?
+    \item what does it say
+    \item who is it speaking to
+    \item ``there is a real theory of design out there"
+    \item be aware of the wall of apathy
+\end{itemize}
+
+\subsection{other notes}
+\begin{itemize}
+    \item literature
+    \begin{itemize}
+        \item acknowledge there is a body of lit about the topic
+        \item lead people to important parts
+    \end{itemize}
+\end{itemize}
 
 \section{CORE MODEL}
 \begin{itemize}
     \item FISH
     \begin{itemize}
         \item fish population / concentration
-        \item how do they move (water current, brownian motion, etc.)
-        \item amount of schooling / fish schooling mechanic
+        \item how do they move (water current, brownian motion, etc.) (brownian :) done 11.12)
+        \item amount of schooling / fish schooling mechanic (done 11.12)
     \end{itemize}
     \item SQUID
     \begin{itemize}
-        \item jet propulsion?
+        \item jet propulsion? (madi doesn't know how to do this at all)
         \item choose fish based on multiple criteria? need mechanic
         \begin{itemize}
-            \item how close to fish
-            \item how close fish is to other fish
+            \item how close to fish (done 11.12)
+            \item how close fish is to other fish (mostly done (11.12)
         \end{itemize}
     \end{itemize}
 \end{itemize}
+
 
 \subsection{GOALS}
 \begin{itemize}
@@ -164,6 +236,7 @@ An individual based model of fish school reactions: predicting antipredator beha
     \item how much does the wait time between eating matter
     \item how much does squid-fish coupling matter?
     \item fish population / concentration over time
+    \item realism??
 \end{itemize}
 
 \subsection{FUTURE WORK/SUPPLEMENTAL ACTIVITIES}

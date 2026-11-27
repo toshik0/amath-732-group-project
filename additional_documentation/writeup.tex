@@ -20,6 +20,7 @@
 \usepackage{xcolor}
 \usepackage{wrapfig}
 
+
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\ep}{\varepsilon}
@@ -41,37 +42,55 @@
 \section{Work Split}
 Cole:
 \begin{itemize}
-    \item ran model simulations
-    \item wrote the README for the model? *check
-    \item created the presentation visuals
-    \item helped present :D
+    \item Ran model simulations
+    \item Created the presentation visuals
+    \item Drafted the README for the model
+    \item Helped present :D
 \end{itemize}
 Madi:
 \begin{itemize}
-    \item researched BOID models
-    \item developed the model
-    \item helped present :D
+    \item Researched BOID models
+    \item Developed the model
+    \item Contributed to the write-up
+    \item Major role in task planning and scope adjustments
+    \item Helped present :D
 \end{itemize}
 Sarah:
 \begin{itemize}
-    \item background research on squid hunting, fish schooling, predator-prey interactions
-    \item credited art and materials used
-    \item drafted the write-up
-    \item tried to keep everything organized?
-    \item helped present :D
+    \item Researched squid hunting, fish schooling, predator-prey interactions
+    \item Credited/sourced art and materials used (Wrote bibliography and image citations in the slides)
+    \item Wrote most of the write-up
+    \item Edited the README for the model
+    \item Tried to keep everything/everyone organized
+    \item Helped present :D
 \end{itemize}
 
 \section{Additional Info}
 \subsection{Trial And Error / Older Versions}
+\subsubsection{Older Versions of the Model}
+The model went through a few iterations.\\
+The base model contained only Boid models for squid and fish, with the ability for the squid to eat the given, given that they were in close enough proximity to one another. That is, the number of fish and squids, and their cohesion, separation, alignment, and ``considered-a-neighbour" distance were all available tunable parameters. The neighbor distance existed within fish, within squid, and between fish and squid, such that the fish and squid could school, and the squid could respond to being close to the fish by eating them. The second iteration included a fish chasing factor called ``attraction" for the squid, which was originally something like:
+\begin{align*}
+    \textnormal{attraction} = 0.9 (\textnormal{distance from lonely fish}) + 0.1( \textnormal{distance from schooled fish})
+\end{align*}
+However, this logic made it difficult for the squid to chase after any fish directly.\\
+Hence, in the next iteration, this was turned into an if-statement to the effect of "if there is a lonely fish, chase it; if not, go after the school".\\
+The final version was purely aesthetic---the squid quivers were overlaid with pngs of squid emojis.
+\subsubsection{Additional Research}
+More research was done on squid feeding behaviours, diet, fish schooling behaviour and interactions, individual-based models, and more. Ultimately we left most of the research out because it was either too detailed for the scope of our model, or unrelated to our topic. 
 
-\subsection{Future Work?}
+\subsubsection{Discussions We Had}
+There was a brief discussion on how to present the code deliverable - we debated between having a README file, having a Jupyter notebook with markdown, putting the code history in the README or in this document, and so on. Ultimately we decided on a README file, putting the older versions of the code into a folder so they are visible (but not confusing with the main code), and including details on the older models in the write-up (this document).
+
+We discussed how to best cite all of our references for the project. In the end we decided to include them as a slide at the end of our presentation (see attached presentation final two slides).
+
+\subsection{Future Work}
 \begin{itemize}
-    \item different boundary conditions to make it more tank-like
-    \item more complex fish mechanics (e.g. evasion maneuvers when encountering squid)
-    \item more complex squid hunting mechanics (e.g. rapid acceleration when attacking)
+    \item Different boundary conditions to make the model more tank/ocean -like
+    \item More complex fish mechanics (e.g. evasion maneuvers when encountering squid)
+    \item More complex squid hunting mechanics (e.g. rapid acceleration when attacking; locking in on a single target; a cool-down period)
+    \item Adding in the effect of a current (for example, a circular current driving the velocity of the fish).
 \end{itemize}
 
-\section{Additional Bibliography}
-how does one make a bibliography in latex i dont know
 
 \end{document}

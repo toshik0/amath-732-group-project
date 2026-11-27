@@ -19,6 +19,8 @@
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{wrapfig}
+\usepackage[backend=bibtex, style=alphabetic,]{biblatex}
+\addbibresource{references.bib}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -43,7 +45,7 @@
 
 \section{Squid Hunting}
 
-\subsection{Predatory behaviour of squid (Illex illecebrosus) feeding on surface swarms of euphausiids: Nicol \& O'dor, 1985}
+\subsection{Predatory behaviour of squid (Illex illecebrosus) feeding on surface swarms of euphausiids: \cite{nicol}}
 \href{https://doi.org/10.1139/z85-003}{Link} \\
 \begin{itemize}
     \item northern shortfin squid filmed feeding on surface swarms of krill
@@ -56,7 +58,7 @@
 \end{itemize}
 VERDICT: pretty good ngl i thought this was all common knowledge but maybe common knowledge from 1985
 
-\subsection{Predation behaviour of the European squid Loligo vulgaris: Castilla et al., 2020}
+\subsection{Predation behaviour of the European squid Loligo vulgaris: \cite{castilla}}
 \href{https://doi.org/10.1007/s10164-020-00652-4}{Link}
 \begin{itemize}
     \item european squid hunting strategy and body patterning when offered prawn and fish
@@ -78,7 +80,7 @@ VERDICT: pretty good ngl i thought this was all common knowledge but maybe commo
 \end{itemize}
 VERDICT: maybe too much detail for our purposes
 
-\subsection{Observations of wild hunting behaviour and bioluminescence of a large deep-sea, eight-armed squid, Taningia danae: Kubodera et al., 2007}
+\subsection{Observations of wild hunting behaviour and bioluminescence of a large deep-sea, eight-armed squid, Taningia danae: \cite{kubodera}}
 \href{https://doi.org/10.1098/rspb.2006.0236}{Link}
 \begin{itemize}
     \item dana octopus squid (no tentacles!)
@@ -88,14 +90,14 @@ VERDICT: maybe too much detail for our purposes
 \end{itemize}
 VERDICT: overall perhaps not relevant to our model since we are looking at a group of squid
 
-\subsection{Cephalopods as Predators: A Short Journey among Behavioral Flexibilities, Adaptions, and Feeding Habits: Villanueva et al., 2017}
+\subsection{Cephalopods as Predators: A Short Journey among Behavioral Flexibilities, Adaptions, and Feeding Habits: \cite{villanueva}}
 \href{https://doi.org/10.3389/fphys.2017.00598}{Link}
 \begin{itemize}
     \item kind of like a lit review for how cephalopods eat omg?
 \end{itemize}
 VERDICT: could be worth to read in depth later
 
-\subsection{Experiments of whether schooling by their prey affects the hunting behaviour of cephalopods and fish predators: Neill \& Cullen, 1974}
+\subsection{Experiments of whether schooling by their prey affects the hunting behaviour of cephalopods and fish predators: \cite{neill}}
 \href{https://doi.org/10.1111/j.1469-7998.1974.tb04385.x}{Link}
 \begin{itemize}
     \item how much does the size of a fish school change the squid (and fish) hunting success?
@@ -103,21 +105,21 @@ VERDICT: could be worth to read in depth later
 \end{itemize}
 VERDICT: could be worth to read in depth later? idk how accurate it'll be to real squid behaviour
 
-\subsection{Market squid (Doryteuthis opalescens) feeding habits off California during a period of high abundance: Noord, 2026}
+\subsection{Market squid (Doryteuthis opalescens) feeding habits off California during a period of high abundance: \cite{noord}}
 \href{https://doi.org/10.1016/j.ecss.2026.109761}{Link}
 \begin{itemize}
     \item market squid (in california) eat mostly krill, copepods, gastropods, teleosts (in that order) - first two are crustaceans, third is mollusc, fourth is fish
 \end{itemize}
 VERDICT: i mean good to know but not super relevant to our specific project (do krill school??)
 
-\subsection{Predatory strategies of squid (Illex illecebrosus) attacking small and large fish: Foyle \& O'dor, 1987}
+\subsection{Predatory strategies of squid (Illex illecebrosus) attacking small and large fish: \cite{foyle}}
 \href{https://doi.org/10.1080/10236248809378670}{Link}
 \begin{itemize}
     \item how does fish size affect how the squid eats?
 \end{itemize}
 VERDICT: really good for my autism bc these are things i want to know BUT not relevant to our topic unfortunately :(
 
-\subsection{A Kinematic Analysis of Tentacle Extension in the Squid Loligo Pealei: Kier \& Leeuwen, 1997}
+\subsection{A Kinematic Analysis of Tentacle Extension in the Squid Loligo Pealei: \cite{kier}}
 \href{https://doi.org/10.1242/jeb.200.1.41}{Link}
 \begin{itemize}
     \item how do squid use their tentacles to eat?
@@ -126,7 +128,7 @@ VERDICT: really good for my autism bc these are things i want to know BUT not re
 \end{itemize}
 VERDICT: unfortunately not super relevant
 
-\subsection{Food and feeding of jumbo squid Dosidicus gigas in the Gulf of California and adjacent waters after the 1997-98 El nino event: Markaida, 2006}
+\subsection{Food and feeding of jumbo squid Dosidicus gigas in the Gulf of California and adjacent waters after the 1997-98 El nino event: \cite{markaida}}
 \href{https://doi.org/10.1016/j.fishres.2006.02.016}{Link}
 \begin{itemize}
     \item humboldt squid mostly eat mesopelagic fish
@@ -134,7 +136,7 @@ VERDICT: unfortunately not super relevant
 \end{itemize}
 VERDICT: thank goodness squid do actually eat fish
 
-\subsection{Coordinated noctural behavior of foraging jumbo squid Dosidicus gigas: Benoit-Bird \& Gilly, 2012}
+\subsection{Coordinated noctural behavior of foraging jumbo squid Dosidicus gigas: \cite{benoit-bird}}
 \href{https://doi.org/10.3354/meps09664}{Link}
 \begin{itemize}
     \item observations of humboldt squid eating at night
@@ -143,21 +145,14 @@ VERDICT: thank goodness squid do actually eat fish
 \end{itemize}
 VERDICT: maybe worth a skim just qualitatively for background
 
-\subsection{Comparison of the Ontogeny of Hunting Behaviour in Pharaoh Cuttlefish (Sepia pharaonis) and Oval Squid (Sepioteuthis lessoniana): Sugimoto \& Ikeda, 2013}
-\href{https://doi.org/10.1086/bblv225n1p50}{Link}
-\begin{itemize}
-    \item MOST IMPORTANT RESULT: cuttlefish use ambush strategy and squid use a pursuit strategy (at least these ones do)
-\end{itemize}
-VERDICT: idk if worth reading
-
-\subsection{Feeding habits of juvenile Japanese common squid Todarodes pacificus: Relationship between dietary shift and allometric growth: Uchikawa \& Kidokora, 2013}
+\subsection{Feeding habits of juvenile Japanese common squid Todarodes pacificus: Relationship between dietary shift and allometric growth: \cite{uchikawa}}
 \href{https://doi.org/10.1016/j.fishres.2013.07.001}{Link}
 \begin{itemize}
     \item most important result: when these squid become over a certain size, their diet shifts from largely crustaceans to largely fish! so they really will just eat anything...
 \end{itemize}
 VERDICT: idk if worth reading
 
-\subsection{Turning performance of brief squid Lolliguncula brevis during attacks on shrimp and fish: Jastrebsky et al., 2017}
+\subsection{Turning performance of brief squid Lolliguncula brevis during attacks on shrimp and fish: \cite{jastrebsky}}
 \href{https://doi.org/10.1242/jeb.144261}{Link}
 \begin{itemize}
     \item three behavioural phases: approach, strike, recoil
@@ -165,7 +160,7 @@ VERDICT: idk if worth reading
     \item the turning is important wowww
 \end{itemize}
 
-\subsection{Faster is not always better: Turning performance trade-offs in the inshore squids Doryteuthis pealeii and Illex illecebrosus: Ganley et al., 2023}
+\subsection{Faster is not always better: Turning performance trade-offs in the inshore squids Doryteuthis pealeii and Illex illecebrosus: \cite{ganley}}
 \href{https://doi.org/10.1016/j.jembe.2023.151913}{Link}
 \begin{itemize}
     \item how does fin size affect turning rate?
@@ -178,7 +173,7 @@ VERDICT: idk if worth reading
 
 \section{Fish Schooling}
 
-\subsection{An individual based model of fish school reactions: predicting anitpredator behaviour as observed in nature: Vabo \& Nottestad, 2003}
+\subsection{An individual based model of fish school reactions: predicting anitpredator behaviour as observed in nature: \cite{vabo}}
 \href{https://doi.org/10.1046/j.1365-2419.1997.00037.x}{Link}
 \begin{itemize}
     \item individual based model to predict behaviour of fish in general (case used norwegian herring)
@@ -196,7 +191,7 @@ VERDICT: idk if worth reading
 \end{itemize}
 VERDICT: definitely worth a read
 
-\subsection{Density distribution and size sorting in fish schools: an individual-based model: Hemelrijk \& Kunz, 2005}
+\subsection{Density distribution and size sorting in fish schools: an individual-based model: \cite{hemelrijk}}
 \href{https://doi.org/10.1093/beheco/arh149}{Link}
 \begin{itemize}
     \item what spatial patterns can be observed in fish schools as a result of different mechanisms? (ex. familiarity, body size, etc.)
@@ -213,14 +208,14 @@ VERDICT: definitely worth a read
 
 \section{Individual-Based Models}
 
-\subsection{Individual-Based Modeling of Ecological and Evolutionary Processes: DeAngelis \& Mooij, 2005}
+\subsection{Individual-Based Modeling of Ecological and Evolutionary Processes: \cite{deangelis}}
 \href{https://doi.org/10.1146/annurev.ecolsys.36.102003.152644}{Link}
 \begin{itemize}
     \item How are IBMs useful and where are they used?
 \end{itemize}
 VERDICT: maybe worth a skim for some general info
 
-\subsection{Growth Rate Variation and Larval Survival: Inferences from an Individual-Based Size Dependent Predation Model: Rice et al., 1993}
+\subsection{Growth Rate Variation and Larval Survival: Inferences from an Individual-Based Size Dependent Predation Model: \cite{rice}}
 \href{https://doi.org/10.1139/f93-015}{Link}
 \begin{itemize}
     \item Using and IBM to learn about baby fish mortality and how often they survive
@@ -230,10 +225,16 @@ VERDICT: not super relevant to our topic, our sample fish are already full grown
 
 \section{Misc}
 
-\subsection{Impact of cephalopods in the food chain and their interaction with the environment and fisheries: an overview: Piatkowski et al., 2001}
+\subsection{Impact of cephalopods in the food chain and their interaction with the environment and fisheries: an overview: \cite{piatkowski}}
 \href{https://doi.org/10.1016/S0165-7836(01)00226-0}{Link}
 really good if we were studying climate change or doing the population model task
 
+\subsection{Swarming and Behaviour in Antarctic Krill: \cite{tarling}}
+\href{https://doi.org/10.1007/978-3-319-29279-3_8}{Link}
+I skimmed this article to confirm that krill do in fact school! And they do :D So our model can be used with krill as well
+
+\newpage
+\printbibliography[heading=bibintoc]
 
 
 \end{document}

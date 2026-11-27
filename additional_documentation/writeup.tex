@@ -68,17 +68,11 @@ Sarah:
 \section{Additional Info}
 \subsection{Trial And Error / Older Versions}
 \subsubsection{Older Versions of the Model}
-The model went through a few iterations.
-
-The base model contained only Boid models for squid and fish, with the ability for the squid to eat the given, given that they were in close enough proximity to one another. That is, the number of fish and squids, and their cohesion, separation, alignment, and ``considered-a-neighbour" distance were all available tunable parameters. The neighbor distance existed within fish, within squid, and between fish and squid, such that the fish and squid could school, and the squid could respond to being close to the fish by eating them. The second iteration included a fish chasing factor called ``attraction" for the squid, which was originally something like:
+The model went through a few iterations. The base model contained only Boid models for squid and fish, with the ability for the squid to eat the given, given that they were in close enough proximity to one another. That is, the number of fish and squids, and their cohesion, separation, alignment, and ``considered-a-neighbour" distance were all available tunable parameters. The neighbor distance existed within fish, within squid, and between fish and squid, such that the fish and squid could school, and the squid could respond to being close to the fish by eating them. The second iteration included a fish chasing factor called ``attraction" for the squid, which was originally something like:
 \begin{align*}
     \textnormal{attraction} = 0.9 (\textnormal{distance from lonely fish}) + 0.1( \textnormal{distance from schooled fish})
 \end{align*}
-However, this logic made it difficult for the squid to chase after any fish directly.
-
-Hence, in the next iteration, this was turned into an if-statement to the effect of "if there is a lonely fish, chase it; if not, go after the school".
-
-The final version was purely aesthetic---the squid quivers were overlaid with pngs of squid emojis.
+However, this logic made it difficult for the squid to chase after any fish directly. Hence, in the next iteration, this was turned into an if-statement to the effect of "if there is a lonely fish, chase it; if not, go after the school". The final version was purely aesthetic---the squid quivers were overlaid with pngs of squid emojis.
 \subsubsection{Additional Research}
 More research was done on squid feeding behaviours, diet, fish schooling behaviour and interactions, individual-based models, and more. Ultimately we left most of the research out because it was either too detailed for the scope of our model, or unrelated to our topic. 
 
